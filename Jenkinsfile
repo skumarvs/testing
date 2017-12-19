@@ -7,7 +7,7 @@ choice(name: 'food_choice',
 booleanParam(name: 'canEat',
 	 defaultValue: true,
 	description: 'Check box Parameter')
-String(name: 'teststringparam',
+string(name: 'teststringparam',
 	defaultValue: 'defaultstringvalue',
 	description: 'String description for test!!!')
 }	
@@ -15,9 +15,9 @@ String(name: 'teststringparam',
     stage('Build') {
       steps {
         echo 'hi sid'
-	echo " Going to eat ${params.food_choice}"
-	echo "Is Eatable ${params.canEat}"
-	echo "Eat this String ${params.teststringparam}"
+	echo " Going to eat: ${params.food_choice}"
+	echo "Is Eatable: ${params.canEat}"
+	echo "Eat this String: ${params.teststringparam}"
       }
     }
   }
