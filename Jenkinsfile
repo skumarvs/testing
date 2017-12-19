@@ -9,7 +9,7 @@ booleanParam(name: 'canEat',
 	description: 'Check box Parameter')
 String(name: 'teststringparam',
 	defaultValue: 'defaultstringvalue',
-	description: 'String description for test')
+	description: 'String description for test!!!')
 }	
   stages {
     stage('Build') {
