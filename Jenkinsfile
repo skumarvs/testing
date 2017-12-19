@@ -2,7 +2,7 @@ pipeline {
   agent any
   parameters {
 choice(name: 'food_choice', 
-	choices: 'pizza\nburger\nTortitas\nchips,
+	choices: 'pizza\nburger\nTortitas\nchips',
 	description: 'Test Drop Down?')
 booleanParam(name: 'canEat',
 	 defaultValue: true,
